@@ -1,0 +1,29 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales y de respaldo
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archivos de configuración del editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de entorno
+.env
+
+# Carpeta de dependencias (si usas Composer o npm)
+vendor/
+node_modules/
+
+# Archivos de base de datos locales
+*.sql
+*.sqlite
+
+# Archivos específicos del proyecto
+conexion.php

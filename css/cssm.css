@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+    margin-bottom: 20px; /* Margen inferior para separación */
+}
+
+.calendar-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.calendar-wrapper label {
+    margin: 16px; /* Ajuste de margen para el label dentro de .calendar-wrapper */
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin: 16px auto;
+}
+
+th, td {
+    padding: 24px;
+    text-align: left;
+}
+
+th {
+    position: sticky;
+    top: 60px;
+    background-color: #fff;
+    color: #5C707F;  
+}
+
+tbody tr {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02); 
+}
+
+span.deleteicon,
+span.deleteicon-user {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+span.deleteicon span,
+span.deleteicon-user span {
+    position: absolute;
+    display: none;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #ccc;
+    font: 13px monospace;
+    text-align: center;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+span.deleteicon input,
+span.deleteicon-user input {
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+
+h1, .search-container, .user-input-row {
+    margin: 16px;
+}
+
+.search-container, .user-input-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    width: 98%;
+}
+
+#searchUsuario {
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.additional-fields {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.deleteicon,
+.deleteicon-user {
+    position: relative;
+}
+
+.deleteicon input,
+.deleteicon-user input {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.deleteicon span,
+.deleteicon-user span {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: #888;
+}
+
+.input-row label {
+    width: 125px;
+}
+
+.input-row input[type="time"] {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.expand-section {
+    position: sticky;
+    top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #5C707F;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 1;
+}
+
+.arrow {
+    margin-right: 5px;
+    font-size: 14px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.expanded .arrow {
+    transform: rotate(90deg);
+}
+
+
+.text {
+    font-size: 14px;
+}
+
+.expanded .arrow {
+    transform: rotate(90deg);
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilos modernos con colores anteriores para el calendario */
+
+.ui-datepicker {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ui-datepicker-header {
+    background-color: #5C707F;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    background-color: #5C707F;
+    color: #fff;
+    border: none;
+}
+
+.ui-datepicker-calendar {
+    border: none;
+}
+
+.ui-state-default {
+    background-color: #5C707F;
+    color: #fff;
+    border: none;
+    border-radius: 16%;
+    transition: background-color 0.3s ease;
+}
+
+.ui-state-default:hover {
+    background-color: #435A6F;
+}
+
+.ui-datepicker-today {
+    background-color: #9BC7DC;
+    color: #fff;
+    border: none;
+}
+
+.ui-datepicker-current-day {
+    color: #5C707F;
+}
+
+.ui-datepicker-unselectable {
+    color: #ccc;
+}
